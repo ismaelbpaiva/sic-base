@@ -9,3 +9,4 @@ export * from "./src/app/input-container/input-container.component";
 export * from "./src/app/mascaras/mascaras.component";
 export * from "./src/app/modelo/usuario.model";
 export * from "./src/app/modelo/retorno-web-service.model";
+export * from "./src/app/sic-base.module";
