@@ -1,0 +1,19 @@
+<div class="input-group">
+  <input [(ngModel)]="dateModel" 
+         [attr.disabled]="disabled?'':null"
+         ngx-mydatepicker
+         #dp="ngx-mydatepicker"         
+         (click)="dp.toggleCalendar()"
+         [options]="dateOptions"
+         (dateChanged)="onDateChanged($event)"
+         name="dataInicial" class="form-control"/>
+
+  <span class="input-group-btn">
+      <button type="button" class="btn btn-default" (click)="dp.clearDate()" [disabled]="disabled">
+          <i class="glyphicon glyphicon-remove"></i>
+      </button>
+      <button type="button" class="btn btn-default" (click)="dp.toggleCalendar()" [disabled]="disabled">
+          <i class="glyphicon glyphicon-calendar"></i>
+      </button>
+  </span>
+</div>

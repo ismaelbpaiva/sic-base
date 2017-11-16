@@ -1,3 +1,6 @@
+import { LoginService } from './login/login.service';
+import { MensagemService } from './mensagens/mensagem.service';
+import { SicService } from './sic/sic.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +13,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    SicService,
+    MensagemService,
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

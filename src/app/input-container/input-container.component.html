@@ -1,0 +1,8 @@
+<div class="form-group"
+     [class.has-error]="invalido()">
+  <label class="control-label">
+      {{label}}
+  </label>
+  <ng-content></ng-content>
+  <span class="help-block" *ngIf="invalido()"><i class="fa fa-remove"></i>{{mensagemErro}}</span>
+</div>
